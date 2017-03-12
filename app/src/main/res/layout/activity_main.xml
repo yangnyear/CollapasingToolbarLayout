@@ -6,9 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.swpuiot.timeweaker.MainActivity">
+    tools:context=".view.MainActivity">
 
     <android.support.design.widget.AppBarLayout
+        android:id="@+id/ab_maintoolmar"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:fitsSystemWindows="true">
@@ -34,8 +35,14 @@
                 app:layout_collapseMode="pin"
                 app:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
                 app:title="测试"/>
-
-
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_mainlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+    </android.support.v7.widget.RecyclerView>
 </android.support.design.widget.CoordinatorLayout>
