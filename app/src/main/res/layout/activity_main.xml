@@ -26,7 +26,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:fitsSystemWindows="true"
-                android:src="@drawable/ic_abc_image_turn1"/>
+                android:src="@drawable/ic_abc_image_turn1"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7"/>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar_my"
@@ -43,6 +45,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="none"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
     </android.support.v7.widget.RecyclerView>
 </android.support.design.widget.CoordinatorLayout>
